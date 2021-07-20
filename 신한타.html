@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>신혼타운 테스트</title>
+</head>
+<body>
+    <div>자스 테스트</div>
+    <input type = "text" class = "num" value = ''></div>
+    <input type = "submit" class = "submit">
+    <div class = "num_result"></div>
+</body>
+<script type = "text/javascript">
+
+    let num = document.querySelector('.num')
+    let num_result = document.querySelector('.num_result')
+    let submit = document.querySelector('.submit')
+
+    submit.addEventListener('click',clickEvent)
+
+
+    function clickEvent(){
+
+        if(num.value == 1){
+
+            num_result.innerHTML = 2
+
+        } else if(num.value == 2){
+
+            num_result.innerHTML = 3
+
+        } else if (4< num.value <6){
+            num_result.innerHTML = 'dsaf'
+        }   
+    }
+
+
+</script>
+</html>
